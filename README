@@ -1,0 +1,12 @@
+Daily Mood Tracker
+
+The Daily Mood Tracker is a web appication that allows users to record and track their mood. it lets users to select a mood, add a descritpion, and save the entry. the web saves the mood using LocalStorage, so that it says after the page reloads. The purpose of this Daily mood tracker is to help users understand their emotion patterns and reflect over their emotions over time. 
+
+How to use the Daily Mood Tracker
+    - Select a mood from the dropdown selection that shows happy, sad, meh, or Angry
+    -add a note that describes your mood
+    =click the "Add Mood" button to save it 
+    - When it comes to viewing or moods you can view it down below where it says "Mood History" that is because the mood will remain on the page
+    -When it comes to filtering the moods, you can use the dropdown above the mood list to filter the displayed moods by the type of moods
+    -In order to delete a mood, you need to click the "Delete" button that is next to any mood entry in order for it to be removed. 
+    -If you would like to delete all the mood history then you can click the "clear mood history" button which will remove all the mood entries within the history. 

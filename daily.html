@@ -1,0 +1,67 @@
+  <!--Jasmine Alabi I have neither given nor received unauthorized assistance on this assignment.
+During the prepartion of this assignment, Jasmine Alabi used
+ChatGPT in learning how to do a filter dropdown method for users to select. After using 
+this tool, I reviewed and edited the content as needed to ensure its 
+accuracy and take full responsibility for the content in relation to grading.
+-->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!--Meta tags-->
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!--Title of the web page-->
+        <title>Daily Mood Tracker</title>
+        <!--link to the stylesheet to style the page-->
+        <link rel="stylesheet" href="styles.css" />
+    </head>
+    <body>
+        <div class="container">
+            <!--Main title of the page-->
+            <h1>Daily Mood Tracker😊</h1>
+
+            <!-- inputs for the mood and description-->
+             <form id="mood-form">
+                <!--labels and dropdown to select the moods-->
+                <label for="mood">Mood:</label>
+                <select id="mood" required>
+                    <!--All the selection according to the moods-->
+                    <option value="">--Select your mood--</option>
+                    <option value="happy">😊 Happy</option>
+                    <option value="sad">😢 Sad</option>
+                    <option value="meh">😐 Meh</option>
+                    <option value="angry">😠 Angry</option>
+                </select>
+
+                <!--Label and input field for decribing the moods-->
+                <label for="note">Description:</label>
+                <input type="text" id="note" placeholder="Why do you feel the way you feel?"/>
+
+                <!--Button for submit to add the selected mood-->
+                <button type="submit">Add a Mood</button>
+             </form>
+
+             <!--mood history-->
+             <h2>Mood History</h2>
+            <!--Makes sure that the list are unorderd for display-->
+             <ul id="mood-list"></ul>
+            
+             <!--Button the clear the mood history-->
+             <button id="clear-history">Clear Mood History</button>
+
+            <!--Label for the dropdown for filters-->
+            <label for="filter">Filter by mood:</label>
+            <select id="filter">
+                <!--Options to filter based on all or specific mood-->
+                <option value="all">All</option>
+                <option value="happy">Happy 😊</option>
+                <option value="sad">Sad 😢</option>
+                <option value="meh">Meh 😐</option>
+                <option value="angry">Angry 😠</option>
+            </select>
+        </div>
+
+        <!--Link to the external JavaScript file to handle the mood tracking logic-->
+        <script src="daily.js"></script>
+    </body>
+</html>

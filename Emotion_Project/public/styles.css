@@ -1,0 +1,133 @@
+/* style.css file that includes the aspects and attributes of how the front-end web should 
+look like to the users*/ 
+
+
+/*Style for the body of the page*/
+body
+{
+    /*set the font family for the whole page*/
+    font-family: 'Segoe UI', sans-serif;
+    /*set the background color to white*/
+    background-color: #f6f0f8;
+    /*don't have default margin*/
+    margin: 0; 
+    /*make padding around the page*/
+    padding: 20px;
+
+}
+
+.container
+{
+    /*set the max width for the container*/
+    max-width: 500px;
+    /*set the container to be horizontal*/
+    margin: auto;
+    /*set the background to white for the container*/
+    background: White;
+    /*add padding inside the container*/
+    padding: 20px;
+    /*create the border to have round corners*/
+    border-radius: 12px;
+    /*add a subtle box shadow around the container*/
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+}
+
+/*Style for the header elements*/
+h1, h2
+{
+    /*align the text for the headers to be center*/
+    text-align: center;
+}
+
+/*style the form element*/
+form
+{
+    /*have flexbox arrange the form element in a column*/
+    display: flex;
+    flex-direction: column;
+    /*create space between the form elements*/
+    gap: 10px;
+
+}
+
+/*Style the button for the general buttons*/
+input, select, button
+{
+    /*create pading inside the buttons*/
+    padding: 10px;
+    /*create a default font size*/
+    font-size: 1rem;
+
+}
+
+/*style for the buttons*/
+button
+{
+    /*set the background color to green*/
+    background-color: #4caf50;
+    /*set the text color to be white*/
+    color: rgb(255, 255, 255);
+    /*remove the default border*/
+    border: none;
+    /*have the cursor be changed to pointer*/
+    cursor: pointer;
+
+}
+
+/*Button hover effect*/
+button:hover
+{
+    /*create the background color when it is hovered to be red*/
+    background-color: Red;
+}
+
+/*Style for the mood history list*/
+#mood-list
+{
+    /*remove the default bullet points*/
+    list-style-type: none;
+    /*remove the padding from the list*/
+    padding: 0; 
+}
+
+/*Style for the indvidual mood items in the list*/
+.mood-item
+{
+    /*Set the background color to be white*/
+    background-color: #e0e0e0;
+    /*add margin between the mood items*/
+    margin: 10px 0; 
+    /*add padding inside the mood items*/
+    padding: 10px;
+    /*round the corners of the mood items*/
+    border-radius: 8px;
+}
+
+/*Style for the delete buttons in the mood items*/
+.delete-Button 
+{
+    /*Have it float to the right*/
+    float: right;
+    /*Set background color to black*/
+    background-color: Black;
+    /*set the text to white*/
+    color: white;
+    /*remove the default border*/
+    border: none; 
+    /*add padding inside the button*/
+    padding: 5px 10px; 
+    /*have the cursor be changed to pointer*/
+    cursor: pointer; 
+    /*add left margin to separate the button from the content*/
+    margin-left: 10px;
+    /*round the corners of the delete button*/
+    border-radius: 5px; 
+}
+
+/*Hover effect for the delete button*/
+.delete-Button:hover
+{
+    /*change the color when hovering to red*/
+    background-color: #e60000;
+}
